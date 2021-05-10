@@ -1,0 +1,42 @@
+.section-blockchain-gaming {
+  background: $main-blue;
+  padding: 6rem 0;
+  .section-title {
+    text-align: center;
+    color: $white;
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  .section-des {
+    text-align: center;
+    color: $text-white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .blockchain-cards {
+    max-width: 1700px;
+    padding: 0 15px;
+    margin: 7rem auto 0;
+    .blockchain-card {
+      border: 2px solid $border-gray;
+      border-radius: 15px;
+      overflow: hidden;
+      background: $secondary;
+      margin-bottom: 2.5rem;
+      .card-image {
+        height: 30rem;
+        @include centerImage;
+        @media (max-width: 768px) {
+          height: auto;
+        }
+      }
+      .card-info {
+        min-height: 16rem;
+      }
+    }
+  }
+}

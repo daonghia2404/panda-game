@@ -1,0 +1,67 @@
+header.header {
+  background: $white;
+  .header-wrapper {
+    padding: 5rem 10rem;
+    @media (max-width: 991px) {
+      padding: 2rem 15px;
+    }
+    position: relative;
+  }
+  .header-logo {
+    width: 17rem;
+    @media (max-width: 991px) {
+      transform: translateX(-30px);
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .header-lists {
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: $white;
+      z-index: 5;
+      @include box-shadow;
+      border-top: 1px solid $border;
+      overflow: hidden;
+      max-height: 0;
+      transition: 0.5s ease;
+      overflow: auto;
+      &.active {
+        max-height: 100vh;
+      }
+    }
+    .list-item {
+      .list-link {
+        text-transform: uppercase;
+        color: $text-gray;
+        padding: 1.5rem 2rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        transition: 0.3s ease;
+        display: block;
+        &:hover,
+        &.active {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .btn-menu-mobile {
+    @media (max-width: 991px) {
+      display: block;
+    }
+    display: none;
+    width: 4.8rem;
+    cursor: pointer;
+    margin-right: 15px;
+    img {
+      width: 100%;
+    }
+  }
+}

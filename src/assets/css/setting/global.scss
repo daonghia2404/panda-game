@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+html {
+	font-size: 10px;
+	@media (max-width: 1440px) {
+		font-size: 8px;
+	}
+	@media (max-width: 768px) {
+		font-size: 6px;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,18 @@
+.get-app {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 3;
+  .get-app-btn {
+    display: block;
+    width: 20rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}

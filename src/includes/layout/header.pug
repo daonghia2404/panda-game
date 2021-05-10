@@ -1,0 +1,24 @@
+-
+  const dataNavLinks = [
+    { link: '#', title: 'Home' },
+    { link: '#', title: 'About' },
+    { link: '#', title: 'Faq' },
+    { link: '#', title: 'Blogs' },
+    { link: '#', title: 'Whitepaper' },
+  ]
+
+header.header 
+  .header-wrapper.d-flex.align-items-center.justify-content-between
+    a(href="#").header-logo
+      img(src="./assets/images/logo.svg", alt="")
+    ul.header-lists.d-flex
+      each item, index in dataNavLinks
+        li.list-item 
+          a(href=`${item.link}`).list-link(class=`${index === 0 ? 'active' : ''}`)= item.title
+
+    .header-btn.d-flex.align-items-center 
+      .btn-menu-mobile  
+        img(src="./assets/icons/icon-menu.svg", alt="")
+
+      include ../components/button.pug
+      +Button({ title: 'Download', className: 'primary' })

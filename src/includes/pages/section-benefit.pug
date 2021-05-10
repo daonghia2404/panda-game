@@ -1,0 +1,61 @@
+-
+  const dataBenefitLists = [
+    {
+      icon: './assets/images/image-benefit-1.png',
+      title: 'Peer-to-Peer',
+      des: 'Transactions',
+    },
+    {
+      icon: './assets/images/image-benefit-2.png',
+      title: 'Trustless',
+      des: 'Transactions',
+    },
+    {
+      icon: './assets/images/image-benefit-3.png',
+      title: 'Provable',
+      des: 'Rarity',
+    },
+    {
+      icon: './assets/images/image-benefit-4.png',
+      title: 'Permissionless',
+      des: 'Ecosystem Access',
+    },
+    {
+      icon: './assets/images/image-benefit-5.png',
+      title: 'Secure',
+      des: 'Ownership',
+    },
+    {
+      icon: './assets/images/image-benefit-6.png',
+      title: 'Anonymous',
+      des: 'Ownership',
+    },
+  ]
+
+section.section-benefit 
+  .section-wrapper 
+    .benefit-banner
+      .banner-bg 
+        img(src="./assets/images/bg-benefit.png", alt="")
+      .row.align-items-center
+        .col-lg-6
+          .section-item 
+            .section-image 
+              img(src="./assets/images/image-benefit.png", alt="")
+        .col-lg-6
+          .section-item.content
+            h2.section-title Panda is positioned to spark Web 3.0 
+            p.section-des Panda is positioned to spark Web 3.0 on the TRON network with its revolutionary DApp experiences. Panda is a socio-NFT platform where the users can exchange NFTs with an exchange protocol that is based on the Binance Smart Chain network. For the NFT exchange system, Panda provides access to a pre-built infrastructure that ensures secure, transparent, and customized creation of exchange contracts. In addition to this, the platform works based on De-Fi guidelines proffering censorship-resistant exchange contracts.
+
+    .benefit-lists 
+      p.section-des.text-center The benefits of decentralization include: 
+      .row
+        each item in dataBenefitLists
+          .col-lg-4.col-md-6
+            .benefit-item.d-flex.align-items-center 
+              .item-icon
+                img(src=`${item.icon}`, alt="")
+              .item-info 
+                h5.item-title= item.title 
+                p.item-des= item.des
+

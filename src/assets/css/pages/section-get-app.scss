@@ -1,0 +1,73 @@
+.section-get-app {
+  padding: 6rem 15px;
+  background: $main-blue-dark;
+  .section-wrapper {
+    position: relative;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 4rem 6rem;
+    overflow: hidden;
+    @media (max-width: 991px) {
+      border-radius: 15px;
+    }
+    @media (max-width: 575px) {
+      padding: 4rem 15px;
+    }
+    .section-item {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      @media (max-width: 991px) {
+        justify-content: flex-start !important;
+        .item-bg {
+          left: inherit;
+          right: 0;
+          transform: translate(0, 0);
+          width: 18rem;
+        }
+      }
+    }
+    .section-bg {
+      @include fullAbsolute;
+      @include centerImage;
+      z-index: 1;
+      img {
+        border-radius: 15px;
+      }
+    }
+    .section-title {
+      position: relative;
+      z-index: 3;
+      color: $white;
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    .section-des {
+      position: relative;
+      z-index: 3;
+      color: $text-white;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+    .item-bg {
+      position: absolute;
+      left: 0;
+      bottom: -4rem;
+      width: 24rem;
+      transform: translate(-50%, 0);
+      z-index: 2;
+      @media (max-width: 575px) {
+        bottom: -10rem;
+      }
+    }
+    .get-app-btn {
+      max-width: 20rem;
+      border-radius: 8px;
+      margin: 7.5px 15px 7.5px 0;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

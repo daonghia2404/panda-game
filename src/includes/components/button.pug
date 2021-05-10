@@ -1,0 +1,12 @@
+mixin renderButton(data)
+  span.button-title= data.title
+
+mixin Button(data)
+  if data.link
+    a(href="#" class=`${data.className ? data.className : ''}`).button-component.d-flex.align-items-center.jusityf-content-center
+      +renderButton(data)
+  else 
+    button(class=`${data.className ? data.className : ''}`).button-component.d-flex.align-items-center.jusityf-content-center
+      +renderButton(data)
+
+  

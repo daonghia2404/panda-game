@@ -1,0 +1,19 @@
+section.section-game-of-riches
+  .section-bg 
+    img(src="./assets/images/bg-game-of-riches.png", alt="")
+  .section-wrapper 
+    .row 
+      .col-lg-6 
+        .section-item 
+          .section-logo.d-flex.align-items-center 
+            img(src="./assets/images/image-panda-coin.png", alt="")
+            |Panda - Decentralized Finance
+          h1.section-title “Game of exploration the riches”
+          p.section-des Panda is a coin hunting game which brings entertainment and prosperity for everyone.
+
+          include ../components/button.pug
+          +Button({ title: 'Get your coins now', className: 'primary inner' })
+      .col-lg-6 
+        .section-item 
+          .section-image 
+            img(src="./assets/images/image-game-of-riches.png", alt="")
