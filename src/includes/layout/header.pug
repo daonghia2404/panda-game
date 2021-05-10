@@ -14,7 +14,7 @@ header.header
     ul.header-lists.d-flex
       each item, index in dataNavLinks
         li.list-item 
-          a(href=`${item.link}`).list-link(class=`${index === 0 ? 'active' : ''}`)= item.title
+          a.list-link(href=`${item.link}` class=`${index === 0 ? 'active' : ''}`)= item.title
 
     .header-btn.d-flex.align-items-center 
       .btn-menu-mobile  

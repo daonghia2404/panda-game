@@ -7,6 +7,9 @@
     margin: 0 auto;
     padding: 4rem 6rem;
     overflow: hidden;
+    @media (max-width: 1440px) {
+      padding: 6rem;
+    }
     @media (max-width: 991px) {
       border-radius: 15px;
     }
@@ -17,6 +20,9 @@
       position: relative;
       z-index: 2;
       height: 100%;
+      &.content {
+        padding-right: 6rem;
+      }
       @media (max-width: 991px) {
         justify-content: flex-start !important;
         .item-bg {
@@ -53,11 +59,17 @@
       position: absolute;
       left: 0;
       bottom: -4rem;
-      width: 24rem;
+      width: 24.5rem;
       transform: translate(-50%, 0);
       z-index: 2;
+      img {
+        width: 100%;
+      }
+      @media (max-width: 1440px) {
+        bottom: -6rem;
+      }
       @media (max-width: 575px) {
-        bottom: -10rem;
+        bottom: -4rem;
       }
     }
     .get-app-btn {
