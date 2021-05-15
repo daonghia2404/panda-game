@@ -2,6 +2,10 @@
   position: relative;
   padding: 14rem 15px;
   overflow: hidden;
+  margin-top: 21rem; 
+  @media (max-width: 991px) {
+    margin-top: 15rem;
+  }
   .section-bg {
     @include fullAbsolute;
     @include centerImage;
