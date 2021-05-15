@@ -502,6 +502,17 @@ footer.footer {
 .section-blockchain-gaming {
   background: #00033E;
   padding: 6rem 0; }
+  .section-blockchain-gaming .section-header {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px; }
+    .section-blockchain-gaming .section-header img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-100%, -50%);
+      width: 20rem; }
   .section-blockchain-gaming .section-title {
     text-align: center;
     color: #fff;
@@ -515,6 +526,10 @@ footer.footer {
     font-weight: 400;
     max-width: 600px;
     margin: 0 auto; }
+  .section-blockchain-gaming .blockchain-image {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: block; }
   .section-blockchain-gaming .blockchain-cards {
     max-width: 1700px;
     padding: 0 15px;
@@ -600,12 +615,15 @@ footer.footer {
       .section-game-of-riches .section-wrapper .section-image img {
         width: 100%; }
 
+.section-panda-distribution,
 .section-workflow {
   padding: 6rem 15px;
   background: #0B0C22; }
+  .section-panda-distribution .section-wrapper,
   .section-workflow .section-wrapper {
     max-width: 1230px;
     margin: 0 auto; }
+    .section-panda-distribution .section-wrapper img,
     .section-workflow .section-wrapper img {
       width: 100%; }
 

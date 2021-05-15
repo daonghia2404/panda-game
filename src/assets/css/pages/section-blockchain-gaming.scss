@@ -1,6 +1,19 @@
 .section-blockchain-gaming {
   background: $main-blue;
   padding: 6rem 0;
+  .section-header {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-100%, -50%);
+      width: 20rem;
+    }
+  }
   .section-title {
     text-align: center;
     color: $white;
@@ -15,6 +28,11 @@
     font-weight: 400;
     max-width: 600px;
     margin: 0 auto;
+  }
+  .blockchain-image {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: block;
   }
 
   .blockchain-cards {
